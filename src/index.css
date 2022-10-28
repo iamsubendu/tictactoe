@@ -6,10 +6,9 @@ body {
   color: #fff;
 }
 
-/* .container {
-  width: 300px;
-  margin: 10vh auto 0;
-} */
+.container {
+  margin: 40vh auto 0;
+}
 
 /* .board {
   display: grid;
@@ -17,7 +16,7 @@ body {
   grid-template-rows: 1fr 1fr 1fr;
 } */
 .board {
-  margin: 20px;
+  margin: -35vh 5vw;
 }
 
 .row {
@@ -33,4 +32,33 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 800;
+  font-size: 18vw;
+}
+
+.winner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2rem;
+  color: #24b824;
+  margin-top: 15em;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  margin: 10vh 3vw;
+  font-size: 3rem;
+}
+
+button {
+  padding: 1vw;
+  font-weight: 700;
+}
+
+h4 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
 }

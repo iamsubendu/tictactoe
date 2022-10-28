@@ -25,7 +25,6 @@ const Board = () => {
     ];
     for (let logic of winner) {
       const [x, y, z] = logic;
-      console.log(state[x], state[y], state[z]);
       if (state[x] !== null && state[x] === state[y] && state[x] === state[z]) {
         return state[x];
       }
@@ -39,10 +38,10 @@ const Board = () => {
   return (
     <div className="board">
       {isWinner ? (
-        <>
+        <div className="winner">
           {isWinner} won the game
           <button onClick={handleReset}>Play again</button>
-        </>
+        </div>
       ) : (
         <>
           <h4>Player {plyrOne ? '1' : '2'} turn</h4>

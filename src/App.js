@@ -3,9 +3,12 @@ import Board from './components/Board.jsx';
 
 const App = () => {
   return (
-    <div className="container">
-      <Board />
-    </div>
+    <>
+      <h2>Lets play Tic-Tac-Toe</h2>
+      <div className="container">
+        <Board />
+      </div>
+    </>
   );
 };
 
