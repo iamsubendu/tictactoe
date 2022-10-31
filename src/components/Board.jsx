@@ -26,6 +26,7 @@ const Board = () => {
     for (let logic of winner) {
       const [x, y, z] = logic;
       if (state[x] !== null && state[x] === state[y] && state[x] === state[z]) {
+        // state[0] must be equal to state[1] that to be X/O
         return state[x];
       }
     }
